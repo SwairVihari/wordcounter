@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.HeadLine{
+ width: 100%;
+ background-color: white;
+ /* border: 2px solid green; */
+
+}
+.HeadLine > h1{
+  margin-left: 20px;
+  color: #4DDA9E;
+  padding-bottom: 20px ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+  background-color: #F6F7F8;
+  width: 100%;
+  height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Word-Counter{
+background-color: white;
+/* border: 2px solid red; */
+max-width: 750px;
+margin: 20px auto;
+box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
+-webkit-box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.word-counter-stat{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
+  /* flex-direction: row; */
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.word-counter-stat > div{
+  /* border: 2px solid red; */
+  margin-left: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.word-counter-stat-heading{
+  color: #A3A4A5;
+  font-weight: bold;
+}
+
+.word-counter-stat-text{
+  color: black;
+  font-weight: 900;
+}
+.text{
+  border-top: 1px solid #A3A4A5;
+  width: 90%;
+  margin: 0px auto;
+}
+textarea{
+  margin-top: 20px;
+  width: 98%;
+  min-height: 50vh;
+  border: none;
+}
+
+textarea:focus, input:focus{
+  outline: 0;
+}
+
+@media screen and (min-width:600px) {
+  .word-counter-stat{
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  p{
+    text-align: center;
   }
 }
+
+
+

@@ -7,7 +7,7 @@
 .HeadLine > h1{
   margin-left: 20px;
   color: #4DDA9E;
-  padding-bottom: 20px ;
+  padding: 20px 0px ;
 }
 
 .App{
@@ -24,6 +24,7 @@ margin: 20px auto;
 box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
 -webkit-box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
 -moz-box-shadow: 5px 10px 62px -28px rgba(0,0,0,0.75);
+padding: 20px 0px;
 }
 
 .word-counter-stat{
@@ -60,11 +61,31 @@ textarea{
   width: 98%;
   min-height: 50vh;
   border: none;
+
+  
+}
+
+
+.font-size-2{
+  font-size: 25px;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 textarea:focus, input:focus{
   outline: 0;
 }
+
+.Button-Action-Group{
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: center;
+
+}
+
 
 @media screen and (min-width:600px) {
   .word-counter-stat{
